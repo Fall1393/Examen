@@ -1,6 +1,3 @@
-//package binario;
-
-
 public class Binario {
     public  static  void main(String[]args){
         Binario entero= new Binario();
@@ -20,13 +17,34 @@ public class Binario {
         b=n%2;
         c=(c/2)*10;
 
+        n=a;
+        a=(int)a/2;
+        b=n%2;
+        c=(c/2)*10;
 
 
-
-
+        n=a;
+        a=(int)a/2;
+        b=n%2;
+        c=(c/2)*10;
 
         System.out.println(c);
         return c;
     }
 
+    public int ciclo(int n){
+        int a,b;
+        int c = 0;
+
+        do {
+            a = (int)n/2;
+            b = n%2;
+            c = c*10+b;
+            n=a;
+
+        }while(a > 0) ;
+        return c;}
+
+    
 }
+
